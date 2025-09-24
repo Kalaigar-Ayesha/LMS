@@ -87,12 +87,7 @@ const Navbar: React.FC = () => {
               </div>
             )}
 
-            <button
-              onClick={toggleTheme}
-              className="p-2 rounded-md text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
-            >
-              {isDark ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
-            </button>
+            // ...existing code...
           </div>
 
           {/* Mobile menu button */}
