@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { BookOpen, Mail, Phone, MapPin } from 'lucide-react';
+import { BookOpen, Mail, Phone } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (

@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { Search, Filter, Grid, List } from 'lucide-react';
-import { courses, Course } from '../data/courses';
+import { courses } from '../data/courses';
 import CourseCard from '../components/CourseCard';
 import Button from '../components/Button';
 import Card from '../components/Card';
@@ -16,7 +16,7 @@ const Courses: React.FC = () => {
   const levels = ['All', 'Beginner', 'Intermediate', 'Advanced'];
 
   const filteredAndSortedCourses = useMemo(() => {
-    let filtered = courses.filter(course => {
+    const filtered = courses.filter(course => {
       const matchesSearch = course.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
                            course.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
                            course.instructor.toLowerCase().includes(searchTerm.toLowerCase());

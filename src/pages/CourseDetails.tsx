@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { 
-  Clock, Users, Star, BookOpen, Play, FileText, 
+  Clock, Star, BookOpen, Play, FileText, 
   HelpCircle, ArrowLeft, Award, Calendar, CheckCircle 
 } from 'lucide-react';
 import { courses } from '../data/courses';

@@ -74,13 +74,13 @@ const Signup: React.FC = () => {
     setLoading(true);
 
     try {
-      const success = await signup(formData.name, formData.email, formData.password);
+      const success = await signup(formData.name, formData.email);
       if (success) {
         navigate('/dashboard');
       } else {
         setErrors({ general: 'Failed to create account. Please try again.' });
       }
-    } catch (error) {
+    } catch {
       setErrors({ general: 'An error occurred. Please try again.' });
     } finally {
       setLoading(false);

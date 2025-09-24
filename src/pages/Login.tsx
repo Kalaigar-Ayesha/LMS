@@ -43,13 +43,13 @@ const Login: React.FC = () => {
     setErrors({});
 
     try {
-      const success = await login(email, password);
+      const success = await login(email);
       if (success) {
         navigate('/dashboard');
       } else {
         setErrors({ general: 'Invalid email or password' });
       }
-    } catch (error) {
+    } catch {
       setErrors({ general: 'An error occurred. Please try again.' });
     } finally {
       setLoading(false);
