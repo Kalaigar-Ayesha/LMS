@@ -87,7 +87,7 @@ const Navbar: React.FC = () => {
               </div>
             )}
 
-            // ...existing code...
+    
           </div>
 
           {/* Mobile menu button */}
